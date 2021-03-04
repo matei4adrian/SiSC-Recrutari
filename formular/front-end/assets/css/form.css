@@ -1,0 +1,197 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	color:rgb(61, 61, 61)!important;
+    font-family: 'Arya', sans-serif !important;
+    background-color: rgb(255,218,185);
+}
+
+hr { 
+	border: 1px solid rgb(61, 61, 61);
+    width: 20%;
+ }
+
+label {
+	color:rgb(61, 61, 61)!important;
+}
+
+/* .btn:link,
+.btn.visited{
+    background-color: #1C9FAC;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+}  */
+
+.btn:hover {
+    background-color: rgb(255, 145, 127);
+    transform:translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0,0,0,.2);
+}
+.formular{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    background-image: url(../bg.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.submit{
+    margin-bottom: 3vh; 
+    margin-top: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formwidth{
+width:50%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .formwidth {
+        width:100%;
+    }
+}
+
+.bgformular{
+	margin-top:1%;
+	border-radius:15px;
+	padding:3%;
+    background-color:  rgb(255,218,185, 0.90);    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.textform{
+	 padding:2%;
+	 margin-bottom:5%;
+	}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid rgb(255,218,185, 0.90);
+    -webkit-box-shadow: 0 1px 0 0 rgb(255,218,185, 0.90);
+    box-shadow: 0 1px 0 0 rgb(255,218,185, 0.90);
+}
+input:not([type]):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=url]:not(.browser-default):focus:not([readonly])+label,
+input[type=time]:not(.browser-default):focus:not([readonly])+label,
+input[type=date]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+    color: rgb(255,218,185, 0.90);
+}
+input[type="checkbox"] {
+    border-right: 2px solid rgb(255,218,185, 0.90);
+    border-bottom: 2px solid rgb(255,218,185, 0.90);
+  }
+  input[type="checkbox"]:checked {
+    border-right: 2px solid rgb(255,218,185, 0.90);
+    border-bottom: 2px solid rgb(255,218,185, 0.90);
+  }
+/*[type="checkbox"]:checked+label:before {
+    border-right: 2px solid #1C9FAC;
+    border-bottom: 2px solid #1C9FAC;
+    } */
+
+a {
+	color:#d12828;
+}
+
+.loader {
+	border: 16px solid rgb(61, 61, 61);
+	border-radius: 50%;
+	border-top: 16px solid green;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite; 
+	animation: spin 1.3s linear infinite;
+	margin: 0 auto;
+	display: none;
+  }
+
+  .cent {
+	  margin: 0 auto;
+  }
+  
+  
+  /* Scroll Bar CSS */
+  ::-webkit-scrollbar {
+      width: 8px;
+      height: 4px;
+  }
+  ::-webkit-scrollbar-button {
+      width: 0;
+      height: 0;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: rgb(220,104,105);
+      border: 0 none rgb(255,218,185, 0.90);
+      border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+      background: rgb(255, 145, 127);
+  }
+  ::-webkit-scrollbar-thumb:active {
+      background: rgb(255, 145, 127, 0.90);
+  }
+  ::-webkit-scrollbar-track {
+      background:rgb(255,218,185);
+      border: 0 none rgb(255,218,185);
+  
+  }
+  ::-webkit-scrollbar-track:hover {
+      background: rgb(255,218,185);
+  }
+  ::-webkit-scrollbar-track:active {
+      background:rgb(255,218,185);
+  }
+  ::-webkit-scrollbar-corner {
+      background: transparent;
+  }
+  #errors-container {
+    color: red;
+  }
+  [type="checkbox"]:checked+label:before {
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid rgb(220,104,105);
+    border-bottom: 2px solid rgb(220,104,105);
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}

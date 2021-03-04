@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formular participare ActualitARTE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arya" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/materialize.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/form.css" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" sizes="32x32">
+</head>
+
+<body>
+    <div id="form-bg" class="formular bg">
+
+        <form id="register_form" class="bgformular formwidth" class="form-signin">
+            <name="register_form" id="register_form" enctype="multipart/form-data">
+                <div class="textform center-align">
+                    <h2 class="form-signin-heading flow-text">Formular participare ActualitARTE</h2>
+                    <hr>
+                </div>
+
+                <div id="errors-container" class="errors-container"></div>
+
+                <div class="input-field">
+                    <input type="text" id="nume" name="nume" class="form-control validate"><br></br>
+                    <label for="nume">Nume
+                        <span class="red-text"> *</span>
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" id="prenume" name="prenume" class="form-control validate"><br></br>
+                    <label for="prenume">Prenume
+                        <span class="red-text"> *</span>
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" id="email" name="email" class="form-control validate"><br></br>
+                    <label for="email">Email
+                        <span class="red-text"> *</span>
+                    </label>
+                </div>
+               
+
+                <br></br><p>Ocupatia<span class="red-text"> *</span></p>
+                <div>
+                    <input type="radio" id="elev" name="ocupatia" value="elev">
+                    <label for="elev">Elev</label><br>
+                
+                    <input type="radio" id="student" name="ocupatia" value="student">
+                    <label for="student">Student</label><br>
+                
+                    <input type="radio" id="angajat" name="ocupatia" value="angajat">
+                    <label for="angajat">Angajat</label><br>
+                
+                    <input type="radio" id="pensionar" name="ocupatia" value="pensionar">
+                    <label for="pensionar">Pensionar</label><br>
+                
+                    <input type="radio" id="liber" name="ocupatia" value="liber">
+                    <label for="liber">Liber profesionist</label><br>
+                
+                    <input type="radio" id="abtinere" name="ocupatia" value="abtinere">
+                    <label for="abtinere">Nu doresc să răspund</label>
+                </div>
+
+                <br></br><p>Ziua/zilele la care doriți să participați<span class="red-text"> *</span></p>
+                <div>
+                    <input type="checkbox" id="vineri" name="vineri">
+                    <label for="vineri">Vineri</label><br>
+                
+                    <input type="checkbox" id="sambata" name="sambata">
+                    <label for="sambata">Sambătă</label><br>
+               
+                    <input type="checkbox" id="duminica" name="duminica">
+                    <label for="duminica">Duminică</label><br>
+                </div>
+
+                <br></br><p>Pe care dintre invitatii nostrii sunteti nerabdator sa-l vedeti?<span class="red-text"> *</span></p>
+                <div>
+                    <input type="radio" id="ion" name="invitat" value="ion">
+                    <label for="ion">Ion</label><br>
+                
+                    <input type="radio" id="costel" name="invitat" value="costel">
+                    <label for="costel">Costel</label><br>
+                </div>
+
+                <div><br></br></br></br>
+                    <input type="checkbox" id="acord" name="acord">
+                    <label for="acord">Sunt de acord cu prelucrarea datelor cu caracter personal<span class="red-text"> *</span></label>
+                </div>
+                
+                <div class="submit">
+                    <input type="submit" name="submit" id="regbutton" class="btn btn-lg btn-primary btn-block"
+                        value="Înscriere">
+
+                </div>
+
+        </form>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"> </script>
+</body>
+
+</html>
